@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 380px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.card .card-img img {
+  width: 100%;
+}
+
+.card .card-body {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.card .card-body h1 {
+  margin-bottom: 18px;
+  color: #222a58;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card .card-body .card-body--text {
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #7d839b;
+}
+
+.card .card-body .annual-plan {
+  background-color: #f8f9fe;
+  color: #222a58;
+  width: 90%;
+  margin: 0 auto;
+  padding: 18px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card .card-body .annual-plan .change a {
+  color: #382e8c;
+}
+
+.card .card-body button {
+  width: 90%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #382ae1;
+  color: #f6f7ff;
+  border-style: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: #e1dcfa 0px 32px 20px;
+}
+
+.card .card-body .cancel {
+  text-decoration: none;
+  color: #222a58;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
