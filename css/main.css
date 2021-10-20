@@ -5,94 +5,82 @@
 }
 
 body {
-  background-color: #0a0c1b;
-  color: #fff;
-  width: 100vw;
-}
-
-span {
-  color: #ad5adc;
+  font-size: 15px;
+  background-color: #090b1a;
 }
 
 .card {
+  background-color: #1b1938;
+}
+
+.card h1,
+.card h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.card span {
+  color: #aa5cdb;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card .card--stat p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1c1938;
-  width: 90%;
-  max-width: 450px;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .card .card--img {
-  margin-bottom: 2rem;
+  background-image: url("../images/image-header-mobile.jpg");
+  width: 100%;
+  height: 250px;
+  background-size: cover;
 }
 
-.card .card--img .img--mobile {
+.card .card--img .color-overlay {
+  background-color: #8e18d8;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.card .card--img img {
   width: 100%;
 }
 
-.card .card--img .img--desktop {
-  display: none;
-}
-
 .card .card--body {
-  text-align: center;
-  padding: 0 10px;
+  padding: 30px;
 }
 
 .card .card--body h1 {
-  font-size: 30px;
-  font-weight: 1000;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .card .card--body p {
-  font-size: 18px;
-  margin-bottom: 1.3rem;
-  color: #c4c2d9;
-  line-height: 28px;
+  margin-bottom: 15px;
 }
 
-.card .card--body .card--stat p {
-  margin-top: 5px;
-  font-size: 14px;
+.card .card--stat h2 {
+  margin-bottom: 4px;
+}
+
+.card .card--stat p {
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 992px) {
-  .row {
-    display: flex;
-    justify-content: space-around;
-  }
-  .row .card--img {
-    order: 2;
-    margin: 0;
-    margin-left: auto;
-  }
-  .row .card--img .img--mobile {
-    display: none;
-  }
-  .row .card--img .img--desktop {
-    display: block;
-    max-width: 418px;
-  }
-  .row .card--body {
-    padding-top: 50px;
-    padding-left: 50px;
-    order: 1;
-    flex-basis: 50%;
-    text-align: start;
-  }
-  .card {
-    max-width: 900px;
-    width: 90%;
-  }
-  .card .card--stat {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 /*# sourceMappingURL=main.css.map */
